@@ -1,0 +1,72 @@
+<div id="scene-Movies" class="scene">
+    <div class="nav">
+        <div class="carousel-container horizontal-scroller-container">
+            <div class="horizontal-scroller">
+                <!-- MOVIES CATEGORIES PLACEHOLDER -->
+            </div>
+        </div>
+    </div>
+    <div class="footer-wrapper">
+        <div class="footer-content-left">
+            <div id="moviesSlides">
+                <div id="movieCover" class="img-wrapper">
+                    <div class="slide-trans"></div>
+                    <div class="slide-info">
+                        <h3 id="movieTitle"></h3>
+                        <p id="movieDesc" class="font-hn-l"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbs-container bottom  thumbs-dis">
+                <div class="footer-content pull-left">
+                    <div class="thumbs" id="moviesThumbs">
+                        <div class="carousel-container horizontal-scroller-container">
+                            <div class="horizontal-scroller">
+                                <!-- MOVIES PLACEHOLDER -->
+                            </div>
+                        </div>
+                        <div class="scroller-arrow prev"></div>
+                        <div class="scroller-arrow next"></div>
+                    </div>
+                    <div class="footer">
+                        <ul class="menu">
+                            <li class="item1">
+                                <a id="showPurchased" class="focusable" href="javascript:;">
+                                    Your Purchased Videos
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-ads ads-player pull-left">
+
+                </div>
+            </div>
+        </div>
+        <div class="ad-zone ad-slider banner-160x600">
+            <img src="./images/banner/right_banner_1.jpg" class="banner ssss-slide">
+            <img src="./images/banner/right_banner_2.jpg" class="banner ssss-slide">
+            <img src="./images/banner/right_banner_3.jpg" class="banner ssss-slide">
+            <img src="./images/banner/right_banner_4.jpg" class="banner ssss-slide">
+            <img src="./images/banner/right_banner_5.jpg" class="banner ssss-slide">
+        </div>
+    </div>
+</div>
+<script data-name="tplMoviesCategories" type="text/html">
+	{{#data}}
+	<div class="nav-item">
+		<a data-id="{{idCategory}}" class="horizontal-item focusable movieCategory {{#if @first}}first{{/if}} {{#if @last}}last{{/if}}" data-age-rating="{{ageRating}}"
+		   data-description="{{details.description}}">{{title}}
+		</a>
+	</div>
+	{{/data}}
+</script>
+<script data-name="tplMoviesThumbs"  type="text/html">
+	{{#list}}
+	<li data-thumb-id="{{idContents}}" data-cover="{{{poster}}}" data-title="{{title}}" data-description="{{details.description}}"
+		class="thumb horizontal-item movieThumb focusable {{#if @first}}first{{/if}} {{#if @last}}last{{/if}}" style="background-image: url('{{{poster}}}')">
+		<div class="launch"></div>
+		<span class="thumb-title">{{title}}</span>
+	</li>
+	{{/list}}
+</script>

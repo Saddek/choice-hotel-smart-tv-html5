@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf')  format('truetype'), url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeue-Light';
+    src: url('../fonts/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeue-Light.woff') format('woff'), url('../fonts/HelveticaNeue-Light.ttf')  format('truetype'), url('../fonts/HelveticaNeue-Light.svg#HelveticaNeue-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeue-UltraLight';
+    src: url('../fonts/HelveticaNeue-UltraLight.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeue-UltraLight.woff') format('woff'), url('../fonts/HelveticaNeue-UltraLight.ttf')  format('truetype'), url('../fonts/HelveticaNeue-UltraLight.svg#../fonts/HelveticaNeue-UltraLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaNeue-Bold';
+	src: url('../fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeue-Bold.woff') format('woff'), url('../fonts/HelveticaNeue-Bold.ttf')  format('truetype'), url('../fonts/HelveticaNeue-Bold.svg#../fonts/HelveticaNeue-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaNeue-Thin';
+	src: url('../fonts/HelveticaNeue-Thin.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeue-Thin.woff') format('woff'), url('../fonts/HelveticaNeue-Thin.ttf')  format('truetype'), url('../fonts/HelveticaNeue-Thin.svg#../fonts/HelveticaNeue-Thin') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.font-hn {
+	font-family: 'HelveticaNeue', Arial, sans-serif !important;
+}
+.font-hn-l {
+	font-family: 'HelveticaNeue-Light', Arial, sans-serif !important;
+}
+.font-hn-ul {
+	font-family: 'HelveticaNeue-UltraLight', Arial, sans-serif !important;
+}
+.font-hn-b {
+	font-family: 'HelveticaNeue-Bold', Arial, sans-serif !important;
+}
+.font-hn-t {
+	font-family: 'HelveticaNeue-Thin', Arial, sans-serif !important;
+}
+body {
+    font-family: 'HelveticaNeue', Arial, sans-serif;
+	height: 100%;
+	background-color: #000;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.bottom-keys {
+	display: none;
+}
+.bottom-keys.active {
+	display: block;
+}
+.scene{
+	display: none
+}
+.focusable {
+	cursor: pointer;
+}
+.clearfix, .clear{
+	clear: both;
+}
+
+ul, ul li {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+a {cursor: pointer; text-decoration: none}

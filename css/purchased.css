@@ -1,0 +1,63 @@
+.purchased-container {
+    width: 1560px;
+    padding: 40px 60px;
+}
+
+#scene-Purchased .ad-zone-container {
+    width: calc(100% - 1680px);
+}
+#scene-Purchased .ad-zone-container .ad-zone {
+    float: right;
+}
+
+.purchased-container .thumb {
+    width: 495px;
+    height: 305px;
+    overflow: inherit;
+}
+
+.purchased-container .thumb .thumb-title {
+    width: auto;
+     position: inherit;
+    font-size: 27px;
+    word-break: break-all;
+    margin-top: 320px;
+    height: 2.5em;
+    overflow: hidden;
+}
+.purchased-container .thumb.focus .thumb-title {
+    margin-top: 15px;
+}
+
+.purchased-header {
+    position: relative;
+    margin-bottom: 20px;
+    height: 60px;
+    line-height: 60px;
+}
+.purchased-header .label-header {
+    text-align: center;
+    font-size: 35px;
+}
+.back-to-movies {
+    font-size: 27px;
+    padding: 0px 30px 0px 30px;
+    text-indent: 35px;
+    text-align: center;
+    background: url(../images/icon-back.png) 30px center no-repeat;
+    border: 1px solid #f9a304;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+.back-to-movies.focus {
+    -webkit-box-shadow: 0 0 3px 3px rgba(249,163,4,1);
+    -moz-box-shadow: 0 0 3px 3px rgba(249,163,4,1);
+    box-shadow: 0 0 3px 3px rgba(249,163,4,1);
+}
+.list-purchased-wrapper {
+    overflow: hidden;
+}
+.list-purchased-movies {
+    position: relative;
+}

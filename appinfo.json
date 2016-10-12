@@ -1,0 +1,11 @@
+{
+  "id": "com.acutek.choice-hotel",
+  "version": "0.0.1",
+  "vendor": "Acutek Solution",
+  "type": "web",
+  "main": "index.html",
+  "title": "Choice Hotel",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.jpg",
+  "disableBackHistoryAPI": true
+}

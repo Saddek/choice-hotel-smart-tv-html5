@@ -1,0 +1,298 @@
+/*uTV_RF_Movie Page*/
+.scene header, .scene .nav {
+    position: relative;
+    z-index: 10;
+}
+.scene .nav{
+    text-align:center;
+    background: rgba(41,46,62,0.08);
+    background: -moz-linear-gradient(left, rgba(41,46,62,0.08) 0%, rgba(41,46,62,0.8) 0%, rgba(41,46,62,0.8) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(41,46,62,0.08)), color-stop(0%, rgba(41,46,62,0.8)), color-stop(100%, rgba(41,46,62,0.8)));
+    background: -webkit-linear-gradient(left, rgba(41,46,62,0.08) 0%, rgba(41,46,62,0.8) 0%, rgba(41,46,62,0.8) 100%);
+    background: -o-linear-gradient(left, rgba(41,46,62,0.08) 0%, rgba(41,46,62,0.8) 0%, rgba(41,46,62,0.8) 100%);
+    background: -ms-linear-gradient(left, rgba(41,46,62,0.08) 0%, rgba(41,46,62,0.8) 0%, rgba(41,46,62,0.8) 100%);
+    background: linear-gradient(to right, rgba(41,46,62,0.08) 0%, rgba(41,46,62,0.8) 0%, rgba(41,46,62,0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292e3e', endColorstr='#292e3e', GradientType=1 );
+    overflow: hidden;
+}
+.scene .nav .nav-item {
+    float: left;
+}
+.scene .nav .carousel-container .nav-item {
+    width: auto;
+}
+.scene .nav a{
+    font-family: "HelveticaNeue-Bold", arial, sans-serif;
+    font-weight: normal;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 21px;
+    height: 65px;
+    line-height: 65px;
+    position: relative;
+    outline: none;
+    text-align: center;
+    padding: 0 50px;
+    margin: 0;
+}
+.scene .nav a:active,.scene .nav a:focus, .scene .nav a.focus{
+    color: #f9a304;
+}
+.scene .purchased{
+    width:100%;
+    height:60px;
+    border-top:2px solid #d42527;
+    bottom:0;
+    text-align:center;
+    padding-top:15px;
+    color:#fff;
+    font-size:1.5em;
+    position:absolute;
+    background: rgba(0,0,0,0.6);
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%);
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%);
+    background: -o-linear-gradient(left, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%);
+    background: -ms-linear-gradient(left, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+    z-index:90000;
+}
+/*end uTV_RF_Movie Page*/
+
+.scene .menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+.scene .item1 a{outline: none;}
+.scene .outerWrapper {
+    position:relative;
+    width:100%;
+    padding: 0 50px;
+}
+
+.scene .outerWrapper .item {
+    display:inline-block;
+    margin-right:48px;
+    width: 498px;
+    height: 446px;
+    font-weight: bold;
+    padding:20px 0;
+    cursor: pointer;
+    border: none;
+}
+
+#purchasedContainer .item h4{
+    color:#d42527;
+    font-size: 32px;
+}
+#purchasedContainer .item p{
+    color:#fff;
+    font-size: 28px;
+    line-height: 1em;
+}
+.scene .launch1{
+    opacity: 0;
+}
+#purchasedContainer .item a.focusable.focus .launch1{
+    opacity: 1;
+}
+.item .launch1{
+    width: 498px;
+    height: 298px;
+    line-height: 298px;
+    background-color:rgba(101, 27, 28, 0.86);
+    position: absolute;
+    text-align: center;
+    z-index: 9999;
+}
+#purchasedContainer .item img {
+    width: 498px;
+    height: 298px;
+}
+.scene .launch1 span{
+    padding: 20px 40px;
+    background-color:#c02425;
+    color: #fff;
+    font-size: 32px;
+    font-style: italic;
+}
+
+/* new styles */
+.footer{
+    background:#000;
+    padding: 10px 90px;
+}
+.item1{
+    text-align: center;
+}
+.item1 a#showPurchased{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    height: 76px;
+    line-height: 76px;
+    border: 2px solid #f9a304;
+}
+.item1 a#showPurchased.focus, .item1 a#showPurchased:hover,  .item1 a#showPurchased:active {
+    -webkit-box-shadow: 0 0 3px 3px rgba(249,163,4,1);
+    -moz-box-shadow: 0 0 3px 3px rgba(249,163,4,1);
+    box-shadow: 0 0 3px 3px rgba(249,163,4,1);
+}
+.item1 > ul {
+    display: none;
+}
+.img-wrapper {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    z-index:8;
+    background-size: cover;
+    background-position: center center;
+}
+.slide-show .img-wrapper.active {
+    z-index:10;
+}
+
+.slide-show .img-wrapper.last-active {
+    z-index:9;
+}
+
+/*********************************
+* Thumbnail Styling
+*********************************/
+.thumbs-container {
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    background: rgba(34,34,34,0.90);
+}
+.thumbs-dis{height: auto;}
+.thumbs-container.top {
+    top: 0;
+}
+.thumbs-container.bottom {
+    bottom: 0;
+    height: 404px;
+}
+ul.thumbs {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    height: 250px;
+    padding:20px 0;
+    margin: 0 5%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+.thumb {
+    display: inline-block;
+    width: 240px;
+    height: 145px;
+    margin: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+}
+.slide-trans{
+    width:70%;
+    height:auto;
+    top: 35%;
+    left: -30%;
+    -webkit-box-shadow: -400px 33px 600px 500px rgba(0,0,0,0.8);
+    -moz-box-shadow: -400px 33px 600px 500px rgba(0,0,0,0.8);
+    box-shadow: -400px 33px 600px 500px rgba(0,0,0,0.8);
+    position:absolute;
+}
+.slide-info{
+    width: 45%;
+    margin-top: 220px;
+    color: #fff;
+    padding: 0px 0 0 100px;
+    position: absolute;
+}
+.slide-info h3{
+    font-size: 80px;
+    margin: 0;
+}
+.slide-info p{
+    font-size:30px;
+}
+.thumbs .horizontal-scroller {
+    padding-bottom: 78px;
+}
+.thumb .launch{
+    display:none;
+}
+.thumb.focus .launch{
+    background: url(../images/movies/icon-play.png) center center no-repeat;
+    background-color: rgba(246,162,58,0.85);
+    width: 100%;
+    display: block;
+    height: 100%;
+    position: relative;
+}
+.thumb .thumb-title {
+    position: absolute;
+    font-size: 23px;
+    color: #fff;
+    top: 165px;
+    width: 240px;
+    word-break: break-all;
+}
+.thumb.focus .thumb-title {
+    color: #f9a304;
+}
+.app-name {
+    position: absolute;
+    font-size: 32px;
+    font-style: italic;
+    color: #fff;
+    bottom: 0;
+    text-align: center;
+    width: 280px;
+}
+.footer-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 9;
+}
+.footer-wrapper .footer-content {
+    width: 1205px;
+    height: 100%
+}
+.footer-wrapper .footer-ads.ads-player {
+    width: 715px;
+    height: 100%;
+}
+
+.scene .ad-zone.banner-160x600 {
+    width: 135px;
+    height: 478px;
+    position: absolute;
+    z-index: 8;
+    right: 0;
+    top: 147px;
+}
+.footer-content .thumbs {
+    padding: 50px 90px 0 90px;
+    position: relative;
+}

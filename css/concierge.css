@@ -1,0 +1,316 @@
+#scene-Concierge {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../images/concierge/loginbg.jpg') top right;
+}
+#scene-Concierge .left {
+  float: left;
+}
+#scene-Concierge .right {
+  float: right;
+}
+#scene-Concierge .wrapper {
+  position: absolute;
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+}
+#scene-Concierge #verticalMenu {
+  background: rgba(0, 0, 0, 0.4);
+  float: left;
+  height: 100%;
+  width: 500px;
+}
+#scene-Concierge .main-menu li {
+  padding: 10px 54px;
+}
+
+#scene-Concierge .main-menu ul {
+  margin-top: 50px;
+}
+
+#scene-Concierge .main-menu a {
+  color: #9c9c9c;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  line-height: 85px;
+  text-align: center;
+  background: #282828;
+  width: 390px;
+}
+
+
+#scene-Concierge #verticalMenu .main-menu a.focus,
+#scene-Concierge #verticalMenu .main-menu a:hover {
+  transition: linear-gradient 0.3s ease;
+  /* background-color: #f9a704; */
+  color: #1E1E1D;
+  opacity: 1;
+  background: rgb(243,196,39);
+  background: -moz-linear-gradient(top, rgba(243,196,39,1) 0%, rgba(253,160,16,1) 40%, rgba(244,126,10,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(243,196,39,1) 0%,rgba(253,160,16,1) 40%,rgba(244,126,10,1) 100%);
+  background: linear-gradient(to bottom, rgba(243,196,39,1) 0%,rgba(253,160,16,1) 40%,rgba(244,126,10,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c427', endColorstr='#f47e0a',GradientType=0 );
+}
+
+#scene-Concierge .room-options {
+  float: left;
+  padding: 60px 0 0 115px;
+  width: 425px;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+#scene-Concierge .room-options li {
+}
+#scene-Concierge .room-options a {
+  color: #b3afac;
+  height: 120px;
+  display: block;
+  line-height: 120px;
+  font-size: 40px;
+}
+#scene-Concierge .room-options a.focus,
+#scene-Concierge .room-options a:hover {
+  transition: color 0.3s ease;
+  color: #f6880b;
+}
+#scene-Concierge .room-options a i{
+  font-family: serif;
+  font-size: 50px;
+  margin-right:100px;
+  font-style: normal;
+}
+
+#scene-Concierge .main-content {
+  float: left;
+  width: calc(100% - 500px);
+  height: 100%;
+}
+
+#scene-Concierge .main-content .room-service-items {
+  color: #b3afac;
+  padding: 60px 0 0 140px;
+  float: left;
+}
+#scene-Concierge .main-content .room-service-items ul {
+  margin-top: 100px;
+  margin-bottom: 90px;
+}
+
+#scene-Concierge .main-content .room-service-items li {
+  line-height: 85px;
+}
+
+#scene-Concierge .main-content .room-service-items .left {
+  width: 315px;
+}
+#scene-Concierge .main-content .room-service-items .rigth {
+  display: inline-block;
+}
+
+#scene-Concierge .main-content .room-service-items .ico-up,
+#scene-Concierge .main-content .room-service-items .ico-down
+ {
+  display: inline-block;
+  background-color: #332a21;
+  background-position: -6px -5px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: -5px;
+  cursor: pointer;
+}
+
+#scene-Concierge .main-content .room-service-items .ico-up.focus,
+#scene-Concierge .main-content .room-service-items .ico-up:hover,
+#scene-Concierge .main-content .room-service-items .ico-down.focus,
+#scene-Concierge .main-content .room-service-items .ico-down:hover {
+  transition: background-color 0.3s ease;
+  background-color: #f6880b;
+}
+
+#scene-Concierge .main-content .room-service-items .ico-up {
+  background-image: url('../images/concierge/btn_up.png');
+}
+
+#scene-Concierge .main-content .room-service-items .ico-down {
+  background-image: url('../images/concierge/btn_down.png');
+}
+
+#scene-Concierge .main-content .room-service-items span.value {
+  margin: 0 20px;
+  font-size: 40px;
+}
+
+#scene-Concierge .main-content .request-btn {
+  display: block;
+  line-height: 95px;
+  width: 450px;
+  text-align: center;
+  color: #f6880b;
+  border: 3px #f6880b solid;
+  font-size: 30px;
+  margin-left: 40px;
+}
+
+.concierge-sub-content {
+  display: none;
+  height: 100%;
+}
+.concierge-sub-content.active {
+  display: block;
+}
+.concierge-sub-content .sub-content-header{
+  padding: 0 90px;
+  height: 85px;
+  font-size: 45px;
+  color: #fff;
+  margin: 0;
+}
+.concierge-sub-content .sub-content-detail {
+    padding: 50px 60px;
+}
+.concierge-sub-content.touch-service .sub-content-detail{
+    padding: 140px 500px 60px 260px;
+}
+.roomServices .sub-content-header {
+  padding: 0;
+}
+
+.car-rental-item {
+  display: block;
+  height: 160px;
+  padding: 20px 88px;
+  color: #fff;
+}
+.car-rental-item.focus {
+  background-color: #2f261f;
+}
+.car-rental-item .vendor-image {
+  width: 300px;
+  height: 100%;
+  float: left;
+}
+.car-rental-item .vendor-image img {
+  width: 100%;
+  height: 100%;
+}
+.car-rental-item .vendor-info {
+  float: left;
+  margin-left: 55px;
+  font-size: 24px;
+}
+.vendor-info .vendor-name {
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0;
+}
+.vendor-info p {
+  margin : 15px 0;
+}
+
+/*checkout*/
+.sub-content-container {
+    padding: 0 90px;
+    color : #e8dede;
+    font-size: 27px;
+}
+.sub-content-container b {
+    color: #fff;
+    font-size: 30px;
+}
+.checkout .sub-content-container table {
+    width:100%;
+}
+.checkout .sub-content-container table td.w40 {
+    width: 40%;
+}
+.checkout .sub-content-container table td.w60 {
+    width: 60%;
+    padding-left:50px;
+}
+.checkout .sub-content-container table td.w60.no-padding {
+    padding: 0;
+    vertical-align: top;
+}
+.checkout .sub-content-container table td p {
+    margin: 12px 0;
+}
+.checkout .sub-content-container table tr.pd50 td {
+    padding-top: 50px;
+}
+.checkout .sub-content-container table td p.orange-text {
+    color: #ffa90a;
+    font-weight: bold;
+    font-size: 32px;
+}
+.service-button {
+    text-align: center;
+    margin-top: 60px;
+}
+.service-button .service-icon {
+    display: inline-block;
+    width: 200px;
+    height: 157px;
+}
+.houseKeeping .service-button .service-icon {
+    background: url(../images/concierge/housekeep-img1.png) no-repeat;
+}
+.houseKeeping .service-button .service-icon.focus {
+    background: url(../images/concierge/housekeep-img2.png) no-repeat;
+}
+.valet .service-button .service-icon {
+    background: url(../images/concierge/valetdeactive-img.png) no-repeat;
+}
+.valet .service-button .service-icon.focus {
+    background: url(../images/concierge/valetcalled-img.png) no-repeat;
+}
+
+.touch-action-label {
+    font-size: 24px;
+    margin: 6px 0;
+}
+.touch-action-label .active-label {
+    display: none;
+}
+.touch-action-label .active-label.active {
+    display: block;
+}
+.touch-action-label  p b {
+    color: #fff;
+    font-size: inherit;
+}
+
+/*business center*/
+.sub-content-detail section, .sub-content-detail aside {
+    float: left;
+}
+.sub-content-detail section {
+    width: calc(60% - 180px);
+    padding: 0 90px;
+}
+.sub-content-detail aside {
+    width: calc(40% - 220px);
+    font-size: 26px;
+    color: #938e88;
+    padding: 0 110px;
+}
+.concierge-sub-content section .sub-content-header {
+    padding: 0;
+}
+.concierge-sub-content section p{
+    margin: 0.5em 0;
+    color: #cecece;
+}
+
+.concierge-sub-content aside h3 {
+    margin-top: 15px;
+}
+.concierge-sub-content aside .promotion-item {
+    margin-top: 45px;
+}
+.concierge-sub-content aside .promotion-item h4 {
+    margin: 5px 0;
+}

@@ -1,0 +1,24 @@
+<div id="popupInfo" style="display: none">
+    <div class="popup">
+        <a id="popupClose" class="focusable close-icon" href="javascript:;">
+            <img src="./images/close.png">
+        </a>
+        <div id="popupContent">
+            <!--    POPUP INFO PLACE HOLDER-->
+        </div>
+    </div>
+</div>
+<script name="tplPopupMessage" type="text/html">
+<h2>{{header}}</h2>
+<p>{{message}}</p>
+<div class="button-container">
+    {{#showCancel}}
+    <button class="cancel focusable" style="display: none;">Cancel</button>
+    {{/showCancel}}
+    <div class="confirm-button-container">
+        <button class="confirm button focusable button--ujarak button--border-thin button--text-thick">
+        OK
+        </button>
+    </div>
+</div>
+</script>

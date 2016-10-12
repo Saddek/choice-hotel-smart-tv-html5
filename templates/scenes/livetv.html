@@ -1,0 +1,164 @@
+<div id="scene-LiveTV" class="scene">
+	<section class="info">
+		<div class="program-info">
+			<div class="liveTV_info">
+				<div class="liveTV_info-container">
+<!--								LIVETV PROGRAM INFO PLACEHOLDER-->
+				</div>
+			</div><!--live TV info-->
+		</div>
+		<div class="ads-player" id="adsPlayer">
+			<!--ADS PLAYER PLACEHOLDER-->
+		</div>
+		<div class="clear"></div>
+	</section>
+	<section class="channels">
+		<div class="channels-info">
+			<div class="toolbar">
+				<div class="channels-filter">
+					<div class="select-channel-type"></div>
+					<div class="select-calendar"></div>
+				</div>
+				<div class="banner ad-zone ad-slider liveTV-728x900">
+					<img src="./images/banner/bottom_banner_1.jpg" class="banner ssss-slide">
+					<img src="./images/banner/bottom_banner_2.jpg" class="banner ssss-slide">
+					<img src="./images/banner/bottom_banner_3.jpg" class="banner ssss-slide">
+					<img src="./images/banner/bottom_banner_4.jpg" class="banner ssss-slide">
+					<img src="./images/banner/bottom_banner_5.jpg" class="banner ssss-slide">
+				</div>
+			</div>
+			<div class="liveTV_channel">
+				<div class="liveTV-channel-left">
+					<div class="info-top">
+						<span>Current time</span>
+						<p class="greetingTime"></p>
+					</div>
+					<div id="left-panel">
+						<ul id="channelList">
+							<!--									CHANNELS LIST PLACEHOLDER-->
+						</ul>
+					</div>
+				</div><!--end liveTV channel left-->
+				<div class="liveTV-channel-right">
+					<div class="scrollyeah">
+						<ul class="channel01" id="timelineList">
+							<!--									SCHEDULE TIMELINE PLACEHOLDER-->
+						</ul>
+						<div id="programList">
+							<!--									PROGRAM LIST PLACE HOLDER-->
+						</div>
+					</div>
+				</div>
+			</div><!--end liveTV channel-->
+		</div>
+		<div class="vertical-banner ad-zone ad-slider liveTV-160">
+			<img src="./images/banner/right_banner_1.jpg" class="banner ssss-slide">
+			<img src="./images/banner/right_banner_2.jpg" class="banner ssss-slide">
+			<img src="./images/banner/right_banner_3.jpg" class="banner ssss-slide">
+			<img src="./images/banner/right_banner_4.jpg" class="banner ssss-slide">
+			<img src="./images/banner/right_banner_5.jpg" class="banner ssss-slide">
+		</div>
+		<div class="clear"></div>
+	</section>
+</div>
+
+<script data-name="tplLiveTVProgram" type="text/html">
+{{#program}}
+<div class="liveTV-info">
+    {{#if hd}}
+	<span class="font-hn-b label-hd">Presented in HD</span><div class="clear"></div>
+    {{/if}}
+    <div class="info-header">
+        <h2 class="liveTV-title font-hn-l">{{title}}</h2>
+        <div class="liveTV-duration font-hn">
+            {{duration}} minutes
+        </div>
+        <div class="clear"></div>
+    </div>
+    <p class="liveTV-description">{{description}}</p>
+</div><!--end liveTv info text-->
+<div class="liveTV-info-time">
+    <ul class="clearfix">
+        <li class="pull-left">
+            <div class="liveTV-time liveTV-time-left"><span>{{beginTime}}</span></div>
+        </li>
+        <li class="pull-left">
+            <div class="liveTV-time-load">
+                <ul>
+                    <li class="pull-left">
+                        <div class="time-load-left">&nbsp;</div>
+                    </li>
+                    <li class="line pull-left">
+                        <div class="time-load-line">&nbsp;</div>
+                        {{^hideTimeLoad}}
+                        <div class="time-load-icon" style="left:{{currentTime}}%">&nbsp;</div>
+                        {{/hideTimeLoad}}
+                    </li>
+                    <li class="pull-left">
+                        <div class="time-load-right">&nbsp;</div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="pull-left">
+            <div class="liveTV-time liveTV-time-right"><span>{{endTime}}</span></div>
+        </li>
+    </ul>
+</div>
+
+{{/program}}
+</script>
+<script data-name="tplChannelCategories" type="text/html">
+{{#data}}
+	<div class="nav-item">
+		<a data-id="{{idCategory}}" class="nav-link focusable channelCategory" href="javascript:;">{{title}}
+		</a>
+	</div>
+{{/data}}
+</script>
+
+<script data-name="tplChannelsList" type="text/html">
+{{#channels}}
+<li>
+	<a href="#" id="channel-{{id}}" class="channelLink" data-hd="{{hd}}" data-id="{{id}}"
+	   data-recordable="{{instantRecordable}}" data-broadcasting="{{broadcasting}}" data-timeshift="{{timeshift}}">
+		<div class="channel">
+			<div class="channel-num">{{number}}</div>
+			<div class="channel-logo"><img src="{{icon}}"></div>
+		</div>
+	</a>
+</li>
+{{/channels}}
+</script>
+
+<script data-name="tplProgramList" type="text/html">
+	<ul class="channel02 clearfix channel-{{channel}}">
+		{{programs}}
+	</ul>
+</script>
+<script data-name="tplProgramHasInfo" type="text/html">
+	<li style="width: {{percent}}%" class="item normal01">
+		<a href="{{program.linkDetail}}" class="focusable no-mouse programLink program-{{program.idProgram}} {{#if isPlaying}}channel-active{{/if}}" data-description="{{program.description}}"
+		data-title="{{program.title}}" data-idProgram="{{program.idProgram}}" data-id-channel="{{program.idChannel}}" data-start="{{program.start}}" data-end="{{program.end}}"
+		data-pictureLink="{{program.pictureLink}}"
+		data-duration="{{program.duration}}">
+   			<div>{{program.title}}</div>
+   		</a>
+	</li>
+</script>
+<script data-name="tplProgramNoInfo" type="text/html">
+	<li style="width: {{percent}}%" class="item normal01">
+		<a href="{{program.linkDetail}}" class="focusable no-mouse programLink program-{{program.idProgram}} {{#if isPlaying}}channel-active{{/if}}" data-description="{{program.description}}"
+		data-title="{{program.title}}" data-idProgram="{{program.idProgram}}" data-id-channel="{{program.idChannel}}" data-start="{{program.start}}" data-end="{{program.end}}"
+		data-pictureLink="{{program.pictureLink}}"
+		data-duration="{{program.duration}}">
+   			<div>{{program.title}}</div>
+   		</a>
+	</li>
+</script>
+
+<script data-name="tplTimeline" type="text/html">
+	<li class="{{#if active}}first-red{{/if}} item item-border">
+		{{text}}
+	</li>
+</script>

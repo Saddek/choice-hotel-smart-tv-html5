@@ -1,0 +1,37 @@
+<div id="scene-Purchased" class="scene">
+    <div class="purchased-container pull-left">
+        <div class="purchased-header">
+            <div class="label-header">
+                Your Purchased Videos
+            </div>
+            <a class="focusable back-to-movies">Back to Movies</a>
+        </div>
+        <div class="list-purchased-wrapper">
+            <div class="list-purchased-movies">
+                <!-- MOVIES PLACEHOLDER -->
+            </div>
+        </div>
+    </div>
+    <div class="ad-zone-container  pull-left">
+        <div class="ad-zone ad-slider banner-160x600 pull-right">
+            <img src="./images/banner/right_banner_1.jpg" class="banner ssss-slide">
+            <img src="./images/banner/right_banner_2.jpg" class="banner ssss-slide">
+            <img src="./images/banner/right_banner_3.jpg" class="banner ssss-slide">
+            <img src="./images/banner/right_banner_4.jpg" class="banner ssss-slide">
+            <img src="./images/banner/right_banner_5.jpg" class="banner ssss-slide">
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+<script  data-name="tplPurchasedVideos"  type="text/html">
+{{#each list}}
+    <div data-thumb-id="{{idContents}}" data-cover="{{{poster}}}" data-title="{{title}}" data-description="{{details.description}}"
+        class="thumb horizontal-item purchasedMovie focusable no-mouse {{#if @first}}first{{/if}} {{#if @last}}last{{/if}}" style="background-image: url('{{{poster}}}')"
+        data-index="{{@key}}">
+        <div class="launch"></div>
+        <div class="thumb-title">{{title}}</div>
+    </div>
+    {{lineSeparator @key 3}}
+{{/each}}
+</script>

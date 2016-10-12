@@ -1,0 +1,18 @@
+.ad-zone {
+    float: left;
+    overflow: hidden;
+}
+.ad-zone img {
+    width: 100%;
+    height: 100%;
+}
+.ad-zone.liveTV-160 {
+    width: 160px;
+}
+.ad-zone.liveTV-728x90 {
+    width: 728px;
+    height: 90px;
+}
+.ad-zone.ad-slider img {
+    display: none;
+}

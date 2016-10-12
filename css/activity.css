@@ -1,0 +1,23 @@
+#scene-FoodAndActivity .thumb .thumb-title {
+    font-style: italic;
+}
+
+#scene-FoodAndActivity .thumb.focus .launch {
+    background: rgba(115, 72, 14, 0.86);
+    text-align: center;
+    line-height: 2;
+    font-size: 70px;
+}
+#scene-FoodAndActivity .thumbs-container {
+    background: none;
+}
+#scene-FoodAndActivity .footer-wrapper .footer-content {
+    background: rgba(34,34,34,0.90);
+    margin-top: 80px;
+}
+#activityCategory{
+    font-size: 29px;
+}
+#scene-FoodAndActivity .slide-info *{
+    color: #fff;
+}

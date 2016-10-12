@@ -1,0 +1,24 @@
+.horizontal-scroller-container {
+    overflow: hidden;
+}
+.horizontal-scroller{
+    position: relative;
+    width: 30000px;
+}
+
+.scroller-arrow {
+    width: 31px;
+    height: 56px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-repeat: no-repeat;
+}
+.scroller-arrow.prev {
+    background-image: url(../images/arrow-left.png);
+    left: 33px;
+}
+.scroller-arrow.next {
+    background-image: url(../images/arrow-right.png);
+    right: 33px;
+}

@@ -1,0 +1,39 @@
+#top_status {
+  background-image: url('../images/concierge/header-bg.jpeg');
+  padding: 15px 30px 0;
+  height: 60px;
+}
+
+#top_status .logo {
+  float: left;
+  width: 25%;
+  // margin-left: 30px;
+}
+
+#top_status .logo img {
+  margin-top: 5px;
+}
+
+#top_status .logo span {
+  padding: 0 20px;
+  margin-left: 20px;
+  border-left: 1px black solid;
+  font-family: 'Open Sans';
+  font-size: 35px;
+}
+
+#top_status .general {
+  float: right;
+  width: 60%;
+  text-align: right;
+  font-family: Lato, Arial, sans-serif;
+  font-size: 24px;
+}
+
+#top_status .general .userinfo img {
+  margin-bottom: -7px;
+}
+
+// #top_status .wrapper {
+//   position: absolute;
+// }

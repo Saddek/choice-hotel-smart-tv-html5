@@ -1,0 +1,69 @@
+.home header {
+	height: auto;
+	position: relative;
+	text-align: center;
+	margin-top: 0.8%;
+	background-color: #101010;
+	border-bottom: 1px solid #101010;
+	height: 40px;
+	padding: 1%;
+}
+
+.home header .logo {
+	position: absolute;
+	left: 2%;
+	top: 22px;
+	z-index: 1;
+}
+
+header .logo {
+	float: left;
+}
+header * {
+	color: #5c6770;
+}
+
+.home .banner img, .home header .logo img, .col-left img, .sidebar img,
+	.new-release img, .sliding-panel .inner-content .image img {
+	max-width: 100%;
+	display: block;
+}
+
+header {
+	/* background: #000; */
+	height: 80px;
+	border-bottom: 1px solid #0a0a0a;
+	background-image: url("../images/header-bg.jpeg");
+}
+
+.logo a {
+	display: block;
+	padding: 20px 80px 20px 35px;
+	width: auto;
+}
+
+.home .logo img {
+	margin: 0;
+}
+
+.top-nav ul li {
+	display: inline-block;
+}
+
+.top-nav ul li a {
+	color: #696969;
+	font-size: 22px;
+	padding: 20px 70px;
+	display: block;
+	text-transform: uppercase;
+}
+
+.top-nav ul li a:hover, .top-nav ul li a.focus, .top-nav ul li a.active {
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+header .separator {
+	border-right: 1px solid #5c6770;
+}

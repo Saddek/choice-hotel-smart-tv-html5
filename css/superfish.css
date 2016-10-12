@@ -1,0 +1,272 @@
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	min-width: 60px;
+}
+
+.sf-menu li {
+	position: relative;
+}
+
+.sf-menu ul {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	z-index: 99;
+	min-width: 180px;
+}
+
+.sf-menu>li {
+	float: left;
+}
+
+.sf-menu li:hover>ul, .sf-menu li.sfHover>ul {
+	display: block;
+}
+
+.sf-menu a {
+	display: block;
+	position: relative;
+}
+
+.sf-menu ul ul {
+	top: 0;
+	left: 100%;
+}
+
+/*** DEMO SKIN ***/
+.sf-menu {
+	background-color: #000;
+}
+
+.sf-menu ul {
+	width: 100%;
+	background-color: #0c0b0c;
+}
+
+.sf-menu a {
+	color: #FFF;
+	font-size: 30px;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	display: inline-block;
+	margin: 0;
+	text-align: left;
+	text-transform: uppercase;
+	line-height: 35px;
+	border: 0px;
+	zoom: 1; /* IE7 */
+}
+
+.sf-menu a:hover {
+	border: 0px;
+}
+
+.sf-menu a:focus {
+	outline: 0;
+}
+
+.sf-menu li {
+	white-space: nowrap; /* no need for Supersubs plugin */
+	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
+	-webkit-transition: background .2s;
+	transition: background .2s;
+	/*border-top:solid 5px #000;*/
+	/* border-bottom: solid 2px #000; */
+	padding: 2% 1.15% 2% 1.15%;
+	min-width: 15.68%; /*before: 5.7%*/
+	opacity: 0.7;
+	background-color: #5c6770;
+}
+
+.sf-menu   ul li {
+	border-bottom: #ccc;
+	padding: 0%;
+}
+
+.sf-menu  ul li a {
+	display: block;
+	width: 94%;
+	font-size: 24px;
+	padding: 3%;
+	text-transform: capitalize;
+	border-top: 1px solid #222;
+}
+
+.sf-menu li:hover, .sf-menu li.sfHover {
+	text-decoration: none;
+	color: #fff;
+	background-color: rbga(00, 00, 00, 1);
+	background-color: #cf8b29;
+	/*border-top:solid 5px #f68a04;*/
+	/* border-bottom: solid 2px #f68a04; */
+	opacity: 1;
+	-webkit-filter: contrast(2) opacity(1);
+	filter: contrast(2);
+}
+
+@media only screen and (device-width: 768px) {
+	.sf-menu  a {
+		font-size: 17px;
+	}
+	.sf-menu  ul li a {
+		font-size: 15px;
+	}
+	.sf-menu li {
+		padding: 1%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.sf-menu  a {
+		font-size: 18px;
+	}
+	.sf-menu  ul li a {
+		font-size: 14px;
+	}
+	.sf-menu li {
+		padding: 1.34%;
+	}
+}
+
+/*@media only screen and (max-width: 1024px)  {
+.sf-menu  a{
+	font-size:18px;
+	}
+	
+.sf-menu  ul li a{
+	font-size:14px;
+	}
+	
+.sf-menu li {
+	padding:1.34%;
+	}
+}*/
+@media only screen and (max-width: 1920px) {
+	.sf-menu li {
+		/*padding: 2%;*/
+		padding: 2% 2.16%;
+	}
+}
+
+@media only screen and (max-width: 1680px) {
+	.sf-menu  a {
+		font-size: 28px;
+	}
+	.sf-menu li {
+		padding: 2% 1.7%;
+	}
+}
+
+@media only screen and (max-width: 1600px) {
+	.sf-menu  a {
+		font-size: 26px;
+	}
+	.sf-menu li {
+		padding: 2% 1.8%;
+	}
+}
+
+@media only screen and (max-width: 1440px) {
+	.sf-menu  a {
+		font-size: 24px;
+	}
+	.sf-menu li {
+		padding: 2% 1.8%;
+	}
+	.infoBlock .lgspan {
+		font-size: 24px;
+	}
+	.home .content .imgdiv h1 {
+		font-size: 28px;
+		line-height: 32px;
+	}
+	.home .content .imgtxt {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 1366px) {
+	.sf-menu  a {
+		font-size: 22px;
+	}
+	.sf-menu li {
+		padding: 2% 1.8%;
+	}
+	.infoBlock .lgspan {
+		font-size: 24px;
+	}
+	.home .content .imgdiv h1 {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.home .content .imgtxt {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+	.sf-menu  a {
+		font-size: 22px;
+	}
+	.sf-menu li {
+		padding: 2% 1.6%;
+	}
+	.infoBlock .lgspan {
+		font-size: 22px;
+	}
+	.home .content .imgdiv h1 {
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.home .content .imgtxt {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 1152px) {
+	.sf-menu  a {
+		font-size: 21px;
+	}
+	.sf-menu li {
+		padding: 2% 1.35%;
+	}
+	.infoBlock .lgspan {
+		font-size: 19px;
+	}
+	.home .content .imgdiv h1 {
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.home .content .imgtxt {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.sf-menu  a {
+		font-size: 18px;
+	}
+	.sf-menu  ul li a {
+		font-size: 14px;
+	}
+	.sf-menu li {
+		padding: 1.5%;
+	}
+	.infoBlock .lgspan {
+		font-size: 16px;
+	}
+	.infoBlock .headdiv {
+		font-size: 26px;
+	}
+	.home .content .imgdiv h1 {
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.home .content .imgtxt {
+		font-size: 18px;
+	}
+}

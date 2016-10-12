@@ -1,0 +1,76 @@
+section.info {
+	height: calc(40% - 92px);
+	background-color: #5c6770;
+	padding: 0;
+}
+
+section.info .program-info, section.info .ads-player {
+	float: left;
+	height: 100%;
+}
+section.info .program-info {
+	width: 60%;
+}
+section.info .ads-player {
+	width: 40%;
+}
+
+section.channels {
+	height: 600px;
+	background-color: #2a2a2a;
+}
+.channels-info {
+	width: calc(100% - 160px);
+	float: left;
+}
+
+.channels-info .toolbar {
+	height: 90px;
+	padding-right: 15px;
+}
+.channels-info .toolbar .channels-filter{
+	width: calc(100% - 728px);
+	height: 100%;
+	background: url(../images/livetv/filter_mock.jpg) no-repeat;
+	background-size: 100% 100%;
+	float: left;
+}
+.liveTV_info {
+	padding: 0 40px;
+	margin-top: 30px;
+ }
+.liveTV-info .info-header {
+	background-color: #fcca21;
+	position: relative;
+	padding: 10px 180px 10px 20px;
+	display: inline-block;
+}
+.liveTV-info .liveTV-description {
+	font-size: 25px;
+}
+.info-header .liveTV-title {
+	font-size: 30px;
+	color: #1c1c1c;
+	margin: 0;
+}
+.info-header .liveTV-duration {
+	font-size: 22px;
+	color: #1c1c1c;
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	font-weight: bold;
+	padding-left: 20px;
+	background: url(../images/livetv/icon-clock.png) left center no-repeat;
+}
+.programLink div {
+	height: 82px;
+	border: 3px solid #343333;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.programLink.focus div {
+	border: 3px solid #a98b25;
+	box-shadow: 0 0 5px #efc22d, 0 0 5px #efc22d, 0 0 5px #efc22d, 0 0 5px #efc22d
+}
